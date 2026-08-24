@@ -1,5 +1,4 @@
 spring:
-# data
   data:
     mongodb:
       host: mongodb-server
@@ -8,10 +7,10 @@ spring:
       username: ${MONGO_USERNAME}
       password: ${MONGO_PASSWORD}
       authentication-database: admin
-# service port
+
 server:
   port: 8083
-# eureka directory
+
 eureka:
   client:
     service-url:
