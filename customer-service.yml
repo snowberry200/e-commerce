@@ -4,9 +4,6 @@ spring:
       host: mongodb-server
       port: 27017
       database: customer_db
-      username: ${MONGO_USERNAME}
-      password: ${MONGO_PASSWORD}
-      authentication-database: admin
 
 server:
   port: 8083
