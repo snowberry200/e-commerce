@@ -1,5 +1,22 @@
 spring:
-  application:
-    name: customer-service
-  config:
-    import: optional:configserver:http://localhost:8888
+  data:
+    mongodb:
+      host: mongo
+      port: 27017
+      database: customer_db
+
+server:
+  port: 8083
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
+  instance:
+    prefer-ip-address: true
+
+logging:
+  level:
+    com.enkasa.customerservice: DEBUG
+    
+    
