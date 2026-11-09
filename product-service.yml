@@ -6,6 +6,8 @@ spring:
    flyway:
       enabled: true
       baseline-on-migrate: true
+      baseline-description: "init"
+      baseline-version: 0
    jpa:
       hibernate:
          ddl-auto: validate
