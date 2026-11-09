@@ -1,5 +1,22 @@
- spring:
-   application:
-      name: product-service
-   config:
-      import: optional:configserver:http://localhost:8888
+spring:
+   datasource:
+      url: jdbc:postgresql://product_db:5432/product_db
+      username: postgres
+      password: postgres
+   flyway:
+      enabled: true
+      baseline-on-migrate: true
+   jpa:
+      hibernate:
+         ddl-auto: validate
+
+server:
+   port: 8282
+
+eureka:
+   client:
+      service-url:
+         defaultZone: http://eureka-server:8761/eureka/
+   instance:
+      prefer-ip-address: true
+      
