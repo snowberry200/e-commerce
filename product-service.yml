@@ -1,7 +1,7 @@
 spring:
    datasource:
-      url: jdbc:postgresql://product_db:5432/product_db
-      username: postgres
+      url: jdbc:postgresql://localhost:5432/e-commerce
+      username: fiifi
       password: postgres
    flyway:
       enabled: true
